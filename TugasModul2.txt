@@ -1,0 +1,34 @@
+1.
+a) orang(dian) = dian adalah orang
+b) mobil(atoz) = atoz adalah mobil
+c) suka(dian,atoz) = dian menyukai atoz
+d) dijual(atoz) = atoz dijual
+e) dapat_membeli(X,Y):-
+orang(X),
+mobil(Y),
+suka(X,Y),
+dijual(Y). = X bisa beli Y jika X adalah orang, Y adalah mobil, X suka Y, dan Y dijual.
+f) suka(_,Apa) = setiap orang suka apa
+
+2.
+A)ricky mempunyai hobi bermain catur = hobi(ricky,catur).
+B)Embang orangnya pemalas = malas(embang).
+C)Yusida seorang vegetarian = vegetarian(yusida).
+D)Kusdiar pandai bermain gitar = pandai(kusdiar,gitar).
+E)Mobil yang berwarna merah itu milik Sadek, bermerk BMW = merah(bmw,mobil),merk(bmw,sadek).
+F)Awan seorang pemain piano, berasal dari pontianak bersuku jawa = pemain(awan,piano),suku(pontianak,jawa).
+G)Seseorang dikatakan pintar jika salah satu dari matematika atau IPA atau IPS mendapat nilai tinggi = kata(orang,pintar) if matematika,ipa,ips(salah_satu,nilai_tinggi).
+H)Setiap orang pasti mati =orang(tiap,mati).
+
+keyword pada prolog
+1. determ : menentukan bahwa hanya boleh ada satu fakta dari suatu predikat sepanjang program berjalan.
+2. nondetrem : menentukan bahwa kemungkinan ada sejumlah fakta dari suatu predikat sepanjang program berjalan (default).
+3. global : menentukan bahwa section facts adalah global dalam program.
+4. single : menentukan hanya satu fakta dari predikat yang akan selalu ada.
+5. nocopy : normalnya pemanggilan fakta akan mengikat variabel ke sebuah string atau ke sebuah objek jamak.
+6. clause : memberikan fakta-fakta yang ada untuk memberikan gambaran kepada VPE dalam melakukan pengujian untuk menjadi solusi dari pertanyaan yang diberikan.
+7. domain : menyatakan jenis variabel atau argumen.
+8. predicates : memberikan gambaran akan kata-kata yang ada dalam program.
+9. goal : menyatakan jenis variabel atau argumen
+10. fact : untuk memulai section facts
+
